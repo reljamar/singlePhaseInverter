@@ -33,9 +33,11 @@ Currently the project performs fixed frequency PWM control of the transistors at
 </p>
 
 ## System architecture
+
 <p align="center">
 <img src="images/Layout-top.jpg" alt="Layout" width="45%"/>
 </p>
+
 ### Microcontroller
 The system is based on an STM32 G431 microcontroller. In this first version of the hardware, a NUCLEO development board is used for the actual MCU implementation, to save on development time. The output of the MCU are four PWM signals, one for driving each transistor, generated in the MCU's internal timers, and include a 1% dead-time between complementary signals. The MCU also controls the precharge.
 ### H-bridge
